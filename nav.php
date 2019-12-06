@@ -23,10 +23,13 @@ if (!isset($_SESSION)){
           if (mysqli_num_rows($result) > 0){
             while ($row = mysqli_fetch_assoc($result)){
               $bananaz= $row['coins'];
+              $usern= $row['user_name'];
             }
           }
           echo "<li><a href=\"logout.php\">Logout</a></li>";
+          echo "<li><a href=\"profile.php\">Profile</a></li>";
           echo "<li><i class=\"em em-banana\" aria-role=\"presentation\" aria-label=\"BANANAZ\"></i> " . $bananaz . "</li>";
+          echo "<li>Hello, " . $usern ."</li>";
         } else {
           echo "<li><a href=\"login.php\">Login</a></li>";
         }

@@ -17,9 +17,9 @@ if (isset($_POST['login'])){
       header("Location: index.php");
     }
   } else if ($tag='' || $pass=''){
-    echo "<h2>Either a password or a username wasn't entered.</h2>";
+    echo "<section class=\"centered\"><h2>Either a password or a username wasn't entered.</h2><section>";
   } else {
-    echo "<h2>Either your password or a username wasn't right. No, I won't tell you. It's me, guys. It's me who puts this evil into the world. I'm the one who does this.</h2>";
+    echo "<section class=\"centered\"><h2>Either your password or a username wasn't right. No, I won't tell you. It's me, guys. It's me who puts this evil into the world. I'm the one who does this.</h2></section>";
   }
 }
 
@@ -34,11 +34,14 @@ if (isset($_POST['login'])){
   <body>
     <section id="main">
     <form method="POST" name="login">
-      <span>Tag, no spaces between the # and numbers. (Name#1234):</span><br/><input type="text" name="username">
-      <hr/>
-      <span>Passcode:</span><br/><input type="password" name="passcode">
+      <p>Jamiebot can show you how to login by typing <code>>>register</code></p><br/>
+      <span>Tag:<input type="text" name="username"></span><small>No spaces between the # and numbers. (Name#1234)</small>
+
+      <span>Passcode:<input type="password" name="passcode"></span>
       <input type="submit" name="login" value="Login (Or Try To)">
       <input type="reset" name="cancel" value="Reset">
+      <hr/>
+      <p>Forgot your passcode? Type <code>>>forgot-password</code> to Jamiebot.</p>
     </form>
   </section>
   </body>
