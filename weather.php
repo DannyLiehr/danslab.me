@@ -3,7 +3,8 @@
   error_reporting(0);
   $grabToken = fopen("./weatherToken.txt", "r");
   $weatherToken= trim(fgets($grabToken));
-
+  include_once 'db.php';
+  include 'nav.php';
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
