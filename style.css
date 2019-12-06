@@ -1,0 +1,26 @@
+:root{
+  --co1: #122A40;
+  --co2: #205373;
+  --co3: #4590BF;
+  --co4: #89BAD9;
+  --co5: #D5E8F6;
+}
+*{
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: var(--co5);
+}
+table{
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+tr, td{
+  border: 1px solid var(--co2);
+  padding: 5px;
+}
+nav>ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  max-height: 90px;
+}
