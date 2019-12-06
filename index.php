@@ -22,7 +22,8 @@
     <title>Dan's Bots</title>
   </head>
   <body>
-    <p>Bananaz Leaderboard- Danny's Bots</p>
+    <section id="main">
+    <h2>Bananaz Leaderboard- Danny's Bots</h2>
     <hr/>
     <?php
     if ($resultCheck > 0){
@@ -38,5 +39,6 @@
     }
 
      ?>
+   </section>
   </body>
 </html>

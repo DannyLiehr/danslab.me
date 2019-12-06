@@ -1,5 +1,6 @@
 <?php
-include 'db.php';
+include_once 'db.php';
+include 'nav.php';
 if (!isset($_SESSION)){
   session_start();
 }
@@ -31,6 +32,7 @@ if (isset($_POST['login'])){
     <title>Login- Super Beta By the way</title>
   </head>
   <body>
+    <section id="main">
     <form method="POST" name="login">
       <span>Tag, no spaces between the # and numbers. (Name#1234):</span><br/><input type="text" name="username">
       <hr/>
@@ -38,5 +40,6 @@ if (isset($_POST['login'])){
       <input type="submit" name="login" value="Login (Or Try To)">
       <input type="reset" name="cancel" value="Reset">
     </form>
+  </section>
   </body>
 </html>
