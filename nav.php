@@ -28,8 +28,8 @@ if (!isset($_SESSION)){
           }
           echo "<li><a class=\"command\" href=\"logout.php\">Logout</a></li>";
           echo "<li><a class=\"command\" href=\"profile.php\">Profile</a></li>";
-          echo "<li><i class=\"em em-banana\" aria-role=\"presentation\" aria-label=\"BANANAZ\"></i> " . $bananaz . "</li>";
           echo "<li>Hello, " . $usern ."</li>";
+          echo "<li><i class=\"em em-banana\" aria-role=\"presentation\" aria-label=\"BANANAZ\"></i> " . $bananaz . "</li>";
           echo "<i class=\"em em-mostly_sunny hide-text\" aria-role=\"presentation\" aria-label=\"mostly sunny\"><a href=\"weather.php\">☁️</a></i>";
         } else {
           echo "<li><a class=\"command\" href=\"login.php\">Login</a></li>";
