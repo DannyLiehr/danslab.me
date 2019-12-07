@@ -15,7 +15,7 @@ if (!isset($_SESSION)){
 <nav>
   <ul>
     <?php
-        echo "<li><a href=\"index.php\">Home</a></li>";
+        echo "<li><a class=\"command\" href=\"index.php\">Home</a></li>";
         if (isset($_SESSION['ID'])){
           $uID= $_SESSION['ID'];
           $query = "SELECT * FROM users INNER JOIN inventory ON users.ID=inventory.ID AND users.ID='$uID'";
@@ -26,12 +26,13 @@ if (!isset($_SESSION)){
               $usern= $row['user_name'];
             }
           }
-          echo "<li><a href=\"logout.php\">Logout</a></li>";
-          echo "<li><a href=\"profile.php\">Profile</a></li>";
+          echo "<li><a class=\"command\" href=\"logout.php\">Logout</a></li>";
+          echo "<li><a class=\"command\" href=\"profile.php\">Profile</a></li>";
           echo "<li><i class=\"em em-banana\" aria-role=\"presentation\" aria-label=\"BANANAZ\"></i> " . $bananaz . "</li>";
           echo "<li>Hello, " . $usern ."</li>";
+          echo "<i class=\"em em-mostly_sunny hide-text\" aria-role=\"presentation\" aria-label=\"mostly sunny\"><a href=\"weather.php\">☁️</a></i>";
         } else {
-          echo "<li><a href=\"login.php\">Login</a></li>";
+          echo "<li><a class=\"command\" href=\"login.php\">Login</a></li>";
         }
      ?>
 </nav>

@@ -42,16 +42,16 @@ nav>ul{
     padding: .5em;
     color: white;
 }
-.navwrapper a::before{
+.navwrapper ul li a::before{
   content: '>>';
 }
-.navwrapper a{
+.navwrapper ul li a{
   color: #fff769;
   transition: .5s;
   text-decoration: none;
   text-transform: lowercase;
 }
-.navwrapper a:hover{
+.navwrapper ul li a:hover{
   color: #fac61b;
 }
 #main{
@@ -88,4 +88,8 @@ textarea{
 }
 hr{
   border: 1px solid var(--co1);
+}
+.hide-text a{
+  /* HIDE IT BITCH ISTG */
+  color: transparent;
 }
