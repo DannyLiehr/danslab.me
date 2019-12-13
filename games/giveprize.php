@@ -50,8 +50,7 @@
       eraseCookie("prize");
     </script>
     <?php
-    var_dump($_COOKIE);
-    // header( "refresh:3; url=/bot_site/index.php" );
+    header( "refresh:3; url=/bot_site/index.php" );
      ?>
    </section>
   </body>

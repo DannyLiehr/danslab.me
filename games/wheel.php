@@ -182,7 +182,16 @@ include '../nav.php';
             function alertPrize(indicatedSegment){
               // alert(`You got 🍌${indicatedSegment.text}.`);
               createCookie("prize",indicatedSegment.text, "1");
-              window.location.href = "/bot_site/games/giveprize.php";
+              // $directory= $_SERVER["HTTP_HOST"];
+              // if ($_SERVER['HTTP_HOST']=='localhost'){
+              //   $directory= $directory . "/bot_site";
+              // }
+              var host = window.location.hostname;
+              var directory = host;
+              if (host == 'localhost'){
+                directory = directory + "/bot_site";
+              }
+              window.location.href = "//"+ directory + "/games/giveprize.php";
             }
         </script>
     </body>
