@@ -23,6 +23,7 @@
   </head>
   <body>
     <section id="main">
+    <?php echo $_SERVER["DOCUMENT_ROOT"]; ?>
     <h2>Bananaz Leaderboard- Danny's Bots</h2>
     <hr/>
     <?php
