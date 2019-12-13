@@ -50,7 +50,11 @@
       eraseCookie("prize");
     </script>
     <?php
-    header( "refresh:3; url=/bot_site/index.php" );
+    $directory= $_SERVER["HTTP_HOST"];
+    if ($_SERVER['HTTP_HOST']=='localhost'){
+      $directory= $directory . "/bot_site";
+    }
+    header( "refresh:3; url=//".$directory."/index.php" );
      ?>
    </section>
   </body>
