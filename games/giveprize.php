@@ -32,7 +32,8 @@
   <body>
     <section id="main">
       <?php
-      echo "<h1>You won <i class=\"em em-banana\" aria-role=\"presentation\" aria-label=\"BANANAZ\"></i>" . $_COOKIE['prize'] . "!</h1>\n<p>You can spin again tomorrow.</p>";
+      echo "<h1>You won <i class=\"em em-banana\" aria-role=\"presentation\" aria-label=\"BANANAZ\"></i>" . $_COOKIE['prize'] . "!</h1>";
+
       date_default_timezone_set("America/New_York");
       $nowNow= date("Y-m-d h:i:sa");
       $uID= $_SESSION['ID'];

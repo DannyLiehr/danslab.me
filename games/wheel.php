@@ -85,6 +85,7 @@ include '../nav.php';
     </head>
     <body>
       <?php
+      date_default_timezone_set("America/New_York");
       $uID = $_SESSION['ID'];
       $query = "SELECT * FROM users INNER JOIN inventory ON users.ID=inventory.ID AND users.ID= '$uID'";
       $result = mysqli_query($conn, $query);
